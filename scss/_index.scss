@@ -18,7 +18,8 @@
             background-color: transparent;
 
             &.active {
-                backg
+                background: #EBB0AD;
+                color: $primary;
             }
         }
     }

@@ -34,3 +34,10 @@
     border: 1px dashed $grey;
     width: 100%;
 }
+
+.right-sticky {
+    > div{
+        position: sticky;
+        top: 1rem;
+    }
+}

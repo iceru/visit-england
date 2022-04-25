@@ -39,6 +39,12 @@
   width: 100%;
 }
 
+.right-sticky > div {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1rem;
+}
+
 .header {
   margin-bottom: 1.5rem;
 }
@@ -198,6 +204,15 @@
   right: 1.5rem;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+}
+
+.take-booking .category .btn {
+  background-color: transparent;
+}
+
+.take-booking .category .btn.active {
+  background: #EBB0AD;
+  color: #E42518;
 }
 
 .take-booking .item-wrapper .item-card {
