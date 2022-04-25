@@ -13,6 +13,16 @@
         }
     }
 
+    .category {
+        .btn {
+            background-color: transparent;
+
+            &.active {
+                backg
+            }
+        }
+    }
+
     .item-wrapper {
         .item-card {
             position: relative;
