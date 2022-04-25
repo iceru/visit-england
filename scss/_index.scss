@@ -58,3 +58,27 @@
         }
     }
 }
+
+.your-basket {
+    .item {
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid $grey;
+        padding-bottom: 1.5rem;
+
+        &:last-child {
+            border-bottom: 1px dashed $grey;
+        }
+    }
+    
+    .summary {
+        @include boxContent;
+        padding: 1.5rem;
+
+        .total {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+    }
+}

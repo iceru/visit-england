@@ -28,6 +28,7 @@
             display: flex;
             align-items: center;
             border: 1px solid #B5B5B6;
+            border-radius: 0;
             border-top-right-radius: .5rem;
             border-bottom-right-radius: .5rem;
             margin-left: -1px;
@@ -38,7 +39,8 @@
         border-top-left-radius: .5rem;
         border-top-right-radius: .5rem;
         overflow: hidden;
-        border: 1px solid $grey;
+        border-left: 1px solid $grey;
+        border-right: 1px solid $grey;
 
         th {
             font-weight: normal;
@@ -72,4 +74,6 @@
             }
         }
     }
+
+    
 }

@@ -1,5 +1,6 @@
-$primary: #cf0010;
+$primary: #E42518;
 $grey: #919192;
+$dark-grey: #1A1A1D;
 $secondary: rgba($color: #919192, $alpha: 0.16);
 
 /* BREAKPOINTS */
@@ -40,4 +41,8 @@ $secondary: rgba($color: #919192, $alpha: 0.16);
 
 .grey-color {
   color: $grey;
+}
+
+.primary-color {
+  color: $primary;
 }

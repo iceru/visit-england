@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'global';
 @import 'navigation';
 @import 'login';
 @import 'index';
@@ -28,6 +29,14 @@ h1,h2,h3,h4,h5,h6,p {
 .btn {
   padding: 14px 1.5rem;
   border-radius: .5rem;
+
+  &.btn-sm {
+    padding: 6px 24px;
+  }
+}
+
+.content {
+  padding-bottom: 40px;
 }
 
 .form-control, .form-select {
