@@ -38,6 +38,7 @@
         border-top-left-radius: .5rem;
         border-top-right-radius: .5rem;
         overflow: hidden;
+        border: 1px solid $grey;
 
         th {
             font-weight: normal;
@@ -45,6 +46,30 @@
 
         th, td {
             padding: 1.5rem 1rem;
+            vertical-align: middle;
+            border-left: none;
+            border-right: none;
+        }
+
+        .status {
+            padding: .5rem 1rem;
+            border-radius: 8px;
+            display: inline-block;
+
+            &.completed {
+                color: #186EE4;
+                background-color: #B2CEF4;
+            }
+
+            &.pending {
+                color: #E4C518;
+                background-color: #F6ECB4;
+            }
+
+            &.failed {
+                color: #C10C00;
+                background-color: #EBB0AD;
+            }
         }
     }
 }

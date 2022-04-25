@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit England</title>
+
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="index">
+        <div class="header">
+            <div class="navigation">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center top-nav">
+                        <a href="index.html">
+                            <div class="logo">
+                                <img src="assets/images/logo.png" alt="Visit England" />
+                                <h4>Trade Portal</h4>
+                            </div>
+                        </a>
+                        <div class="list-menu">
+                            <ul>
+                                <li>
+                                    <a href="settings.html">
+                                        <img src="/assets/images/icons/list.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="settings.html">
+                                        <img src="/assets/images/icons/setting.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="separator"></li>
+                                <li>
+                                    <a href="settings.html">
+                                        <img src="/assets/images/icons/users.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="separator"></li>
+                                <li>
+                                    <a href="settings.html">
+                                        <img src="/assets/images/icons/checklist.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="settings.html">
+                                        <img src="/assets/images/icons/circle.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="login.html">
+                                        <img src="/assets/images/icons/logout.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center bottom-nav">
+                        <div class="menu-main">
+                            <ul>
+                                <li class="active">
+                                    <a href="index.html">Take a Booking</a>
+                                </li>
+                                <li>
+                                    <a href="bookings.html">Bookings</a>
+                                </li>
+                                <li>
+                                    <a href="suppliers.html">Suppliers</a>
+                                </li>
+                                <li>
+                                    <a href="services.html">Services</a>
+                                </li>
+                                <li>
+                                    <a href="baskets.html">Baskets</a>
+                                </li>
+                                <li>
+                                    <a href="reports.html">Reports</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user">
+                            <a href="index.html">Hi John Doe <span>- Tour Operator</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="page-title">
+                        <div class="background">
+                            <img src="/assets/images/background-header-2.png" alt="Background">
+                        </div>
+                        <h1>Template Edit</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <h3 class="mb-3">Basic Info</h3>
+
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <label for="txa_name" class="form-label">TXA Name</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="override_txa"
+                                        id="override_txa" value="checkedValue">
+                                    <label class="form-check-label grey-color" for="override_txa">
+                                        Override
+                                    </label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" name="txa_name" id="txa_name"
+                                placeholder="Enter TXA Name">
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <label for="txa_name" class="form-label">TXA Short Description</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="override_txa"
+                                        id="override_txa" value="checkedValue">
+                                    <label class="form-check-label grey-color" for="override_txa">
+                                        Override
+                                    </label>
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" name="txa_name" id="txa_name"
+                                placeholder="Enter TXA Name">
+                            <div class="text-end mt-1">
+                                0/100 Words
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <label for="txa_name" class="form-label">TXA Long Description</label>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" name="override_txa"
+                                        id="override_txa" value="checkedValue">
+                                    <label class="form-check-label grey-color" for="override_txa">
+                                        Override
+                                    </label>
+                                </div>
+                            </div>
+                            <textarea class="form-control" name="txa_long_desc" id="txa_long_desc" rows="4"></textarea>
+                            <div class="text-end mt-1">
+                                0/500 Words
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="mb-4">
+                                    <label for="service_type" class="form-label">Service Type</label>
+                                    <select name="service_type" id="service_type" class="form-select">
+                                        <option value="" selected disabled>Select Service</option>
+                                        <option value="">Service</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="mb-4">
+                                    <label for="service_style" class="form-label">Service Style</label>
+                                    <select name="service_style" id="service_style" class="form-select">
+                                        <option value="" selected disabled>Family, food and beverages</option>
+                                        <option value="">Service</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="mb-4">
+                                    <label for="commission_level" class="form-label">Commission Level Override
+                                        (%)</label>
+                                    <select name="commission_level" id="commission_level" class="form-select">
+                                        <option value="" selected disabled>Select Service</option>
+                                        <option value="">Service</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="mb-4">
+                                    <label for="promotion_sticker" class="form-label">Promotion Sticker</label>
+                                    <select name="promotion_sticker" id="promotion_sticker" class="form-select">
+                                        <option value="" selected disabled>Save 5%</option>
+                                        <option value="">Service</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="mb-4">
+                                    <label for="search_result" class="form-label">Search result priority</label>
+                                    <select name="search_result" id="search_result" class="form-select">
+                                        <option value="" selected disabled>3</option>
+                                        <option value="">Service</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="top-desc">
+                            <div class="top-image mb-3">
+                                <img src="/assets/images/home-rectangle.png" alt="">
+                            </div>
+                            <div class="top-items">
+                                <div class="row">
+                                    <div class="col-12 mb-3">
+                                        <small>Name</small>
+                                        <p>Wine Coast Villas - Waterfront Villa</p>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <small>Tax Exempt</small>
+                                        <p>No</p>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <small>Member Discount</small>
+                                        <p>Yes</p>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <small>IXA Shortname</small>
+                                        <p>WaterfrontPTNringa_rp</p>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <small>IXA Industry Category</small>
+                                        <p>Accomodation</p>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <small>Service Types</small>
+                                        <p>Accomodation</p>
+                                    </div>
+                                    <div class="col-6 mb-3">
+                                        <small>Service Regions</small>
+                                        <p>Adelaide</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="button" class="btn btn-outline-primary w-100">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
