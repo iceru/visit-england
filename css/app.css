@@ -92,6 +92,34 @@
   height: 2rem;
 }
 
+.header .navigation .icon {
+  font-size: 1rem;
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navigation .icon.light-blue {
+  background-color: #9EFDE7;
+}
+
+.header .navigation .icon.blue {
+  background-color: #9EB4FD;
+}
+
+.header .navigation .icon.yellow {
+  background-color: #FDE39E;
+}
+
 .header .navigation .top-nav {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
@@ -208,11 +236,19 @@
 
 .take-booking .category .btn {
   background-color: transparent;
+  font-weight: lighter;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .take-booking .category .btn.active {
   background: #EBB0AD;
   color: #E42518;
+  font-weight: bolder;
 }
 
 .take-booking .item-wrapper .item-card {
@@ -229,6 +265,46 @@
   position: absolute;
   left: 0;
   top: 1.5rem;
+  padding: .25rem 1rem;
+  color: white;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.take-booking .item-wrapper .item-card .item-type.instant {
+  background-color: #B707BE;
+}
+
+.take-booking .item-wrapper .item-card .item-type.instant:before {
+  border: 1rem solid #B707BE;
+  border-left-width: 0;
+  border-right-color: transparent;
+}
+
+.take-booking .item-wrapper .item-card .item-type.on-request {
+  background-color: #058FA8;
+}
+
+.take-booking .item-wrapper .item-card .item-type.on-request::before {
+  border: 1rem solid #058FA8;
+  border-left-width: 0;
+  border-right-color: transparent;
+}
+
+.take-booking .item-wrapper .item-card .item-type:before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -.95rem;
+  top: 0;
+  border: solid 1rem black;
+  border-left-width: 0;
+  border-right-color: transparent;
 }
 
 .take-booking .item-wrapper .item-card .item-img {

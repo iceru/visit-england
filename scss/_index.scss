@@ -16,10 +16,14 @@
     .category {
         .btn {
             background-color: transparent;
+            font-weight: lighter;
+            display: inline-flex;
+            align-items: center;
 
             &.active {
                 background: #EBB0AD;
                 color: $primary;
+                font-weight: bolder;
             }
         }
     }
@@ -34,6 +38,42 @@
                 position: absolute;
                 left: 0;
                 top: 1.5rem;
+                padding: .25rem 1rem;
+                color: white;
+                background-color: black;
+                display: flex;
+                align-items: center;
+
+                &.instant {
+                    background-color: #B707BE;
+
+                    &:before {
+                        border: 1rem solid #B707BE;
+                        border-left-width:0;
+                        border-right-color:transparent;
+                    }
+                }
+
+                &.on-request {
+                    background-color: #058FA8;
+
+                    &::before {
+                        border: 1rem solid #058FA8;
+                        border-left-width:0;
+                        border-right-color:transparent;
+                    }
+                }
+
+                &:before{
+                    content:"";
+                    display:block;
+                    position:absolute;
+                    right:-.95rem;
+                    top:0;
+                    border:solid 1rem black;
+                    border-left-width:0;
+                    border-right-color:transparent;
+                }
             }
 
             .item-img {

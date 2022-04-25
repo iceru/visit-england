@@ -32,7 +32,27 @@
                 height: 2rem;
             }
         }
-    
+        .icon {
+            font-size: 1rem;
+            height: 32px;
+            width: 32px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &.light-blue {
+                background-color: #9EFDE7;
+            }
+
+            &.blue {
+                background-color: #9EB4FD;
+            }
+
+            &.yellow {
+                background-color: #FDE39E;
+            }
+        }
         .top-nav {
             margin-bottom: 1rem;
             padding-bottom: 1rem;
