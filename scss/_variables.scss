@@ -1,8 +1,14 @@
 $primary: #E42518;
+$secondary: rgba($color: #919192, $alpha: 0.16);
+
+$light-grey: #B5B5B6;
 $grey: #919192;
 $dark-grey: #1A1A1D;
-$secondary: rgba($color: #919192, $alpha: 0.16);
+
 $light-red: #EBB0AD;
+
+$on-request: #058FA8;
+$instant: #B707BE;
 
 /* BREAKPOINTS */
 @mixin breakpoint($point) {

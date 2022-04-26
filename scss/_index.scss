@@ -69,19 +69,66 @@
 }
 
 .your-basket {
+    .basket-section {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid $light-grey;
+    }
     .item {
         margin-bottom: 1.5rem;
-        border-bottom: 1px solid $grey;
+        border-bottom: 1px solid $light-grey;
         padding-bottom: 1.5rem;
 
         &:last-child {
-            border-bottom: 1px dashed $grey;
+            border-bottom: 1px dashed $light-grey;
         }
     }
     
     .summary {
         @include boxContent;
         padding: 1.5rem;
+    }
+
+    .icon-rectangle {
+        margin-right: .5rem;
+        color: white;
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.request {
+            background-color: $on-request;
+        }
+
+        &.instant {
+            background-color: $instant;
+        }
+    } 
+
+    .desc-list {
+        position: relative;
+        padding-left: 1rem;
+        &.request {
+            &::before {
+                background-color: $on-request;
+            }
+        }
+        &.instant {
+            &::before {
+                background-color: $instant;
+            }
+        }
+        &:before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            position: absolute;
+        }
     }
 }
 
@@ -182,22 +229,5 @@
 .booking-success {
     .content {
         padding: 40px 0;
-    }
-}
-
-.view-booking {
-    .content {
-        .container {
-            > .row {
-                @include boxContent;
-                padding: 1.5rem;
-                margin: auto;
-                margin-top: 2rem;
-                position: relative;
-                z-index: 2;
-                background-color: white;
-                width: 90%;
-            }
-        }
     }
 }
