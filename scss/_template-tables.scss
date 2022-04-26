@@ -16,6 +16,17 @@
             top: 50%;
             left: 1rem;
             transform: translateY(-50%);
+
+            &.active {
+                right: 8rem;
+                left: auto;
+                color: $primary;
+
+                & ~ #search_bar {
+                    padding-left: 1rem;
+                    padding-right: 3rem;
+                }
+            }
         }
 
         .form-control {
@@ -32,6 +43,25 @@
             border-top-right-radius: .5rem;
             border-bottom-right-radius: .5rem;
             margin-left: -1px;
+        }
+    }
+
+    .filter-menu {
+        @include boxContent;
+        background-color: white;
+        z-index: 3;
+        height: 0;
+        visibility: hidden;
+        padding: 0;
+        margin: 0;
+        transition: height .2s ease;
+
+        &.active {
+            height: max-content;
+            visibility: visible;
+            margin-top: 1rem;
+            transition: height .2s ease;
+            padding: 2rem;
         }
     }
 

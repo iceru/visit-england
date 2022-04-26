@@ -157,15 +157,153 @@
 
                 <div class="header-table mb-4">
                     <div class="row mb-2">
-                        <div class="col-12 col-lg-9">
+                        <div class="col-12 col-lg-9 position-relative">
                             <div class="search-filter">
                                 <div class="icon">
                                     <i class="bi bi-search"></i>
                                 </div>
                                 <input type="text" placeholder="Search by name, booking ID, email or member #"
-                                    class="form-control">
-                                <button class="btn btn-secondary"><i class="bi bi-filter me-1"></i>Filter</button>
+                                    class="form-control" id="search_bar">
+                                <button class="btn btn-secondary" id="filter"><i
+                                        class="bi bi-filter me-1"></i>Filter</button>
                             </div>
+                            <div class="filter-menu">
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-3">
+                                        <label for="text" class="form-label">Text Input</label>
+                                    </div>
+                                    <div class="col-9">
+                                        <input type="text" class="form-control" name="text" id="text"
+                                            placeholder="Enter text input">
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-3">
+                                        <label for="text" class="form-label">Date</label>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <input type="text" class="form-control" name="text" id="text"
+                                                    placeholder="Enter text input">
+                                            </div>
+                                            <div class="col-6">
+                                                <input type="text" class="form-control" name="text" id="text"
+                                                    placeholder="Enter text input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-3">
+                                        <label for="text" class="form-label">Checkbox</label>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="d-flex">
+                                            <div class="form-check me-3">
+                                                <input type="checkbox" class="form-check-input" name="status"
+                                                    id="status" value="checkedValue" checked>
+                                                <label class="form-check-label" for="status">
+                                                    All Status
+                                                </label>
+                                            </div>
+                                            <div class="form-check me-3">
+                                                <input type="checkbox" class="form-check-input" name="status"
+                                                    id="status" value="checkedValue">
+                                                <label class="form-check-label" for="status">
+                                                    Status 1
+                                                </label>
+                                            </div>
+                                            <div class="form-check me-3">
+                                                <input type="checkbox" class="form-check-input" name="status"
+                                                    id="status" value="checkedValue">
+                                                <label class="form-check-label" for="status">
+                                                    Status 2
+                                                </label>
+                                            </div>
+                                            <div class="form-check me-3">
+                                                <input type="checkbox" class="form-check-input" name="status"
+                                                    id="status" value="checkedValue">
+                                                <label class="form-check-label" for="status">
+                                                    Status 3
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-3">
+                                        <label for="text" class="form-label">Radio Button</label>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="d-flex">
+                                            <div class="form-check me-3">
+                                                <input type="radio" class="form-check-input" name="status" id="status"
+                                                    value="checkedValue" checked>
+                                                <label class="form-check-label" for="status">
+                                                    All Status
+                                                </label>
+                                            </div>
+                                            <div class="form-check me-3">
+                                                <input type="radio" class="form-check-input" name="status" id="status"
+                                                    value="checkedValue">
+                                                <label class="form-check-label" for="status">
+                                                    Status 1
+                                                </label>
+                                            </div>
+                                            <div class="form-check me-3">
+                                                <input type="radio" class="form-check-input" name="status" id="status"
+                                                    value="checkedValue">
+                                                <label class="form-check-label" for="status">
+                                                    Status 2
+                                                </label>
+                                            </div>
+                                            <div class="form-check me-3">
+                                                <input type="radio" class="form-check-input" name="status" id="status"
+                                                    value="checkedValue">
+                                                <label class="form-check-label" for="status">
+                                                    Status 3
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mb-4 align-items-center">
+                                    <div class="col-3">
+                                        <label for="select" class="form-label">Selection</label>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="mb-3">
+                                            <select class="form-select" name="select" id="select">
+                                                <option>Select 1</option>
+                                                <option>Select 2</option>
+                                                <option>Select 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                $('#filter').click(function (e) {
+                                    e.preventDefault();
+                                    $('.filter-menu').toggleClass('active');
+                                });
+
+                                $('#search_bar').focus(function (e) {
+                                    e.preventDefault();
+                                    $('.search-filter .icon').addClass('active');
+                                    $('.icon').append('<i class="bi bi-x-lg"></i>');
+                                    $('.bi-search').remove();
+                                });
+
+                                $('#search_bar').focusout(function (e) {
+                                    e.preventDefault();
+                                    $('.search-filter .icon').removeClass('active');
+                                    $('.icon').append('<i class="bi bi-search"></i>');
+                                    $('.bi-x-lg').remove();
+                                });
+                            </script>
                         </div>
                         <div class="col-12 col-lg-3">
                             <div class="d-flex justify-content-end">

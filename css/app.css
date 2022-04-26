@@ -12469,6 +12469,17 @@ fieldset:disabled .btn {
           transform: translateY(-50%);
 }
 
+.content .search-filter .icon.active {
+  right: 8rem;
+  left: auto;
+  color: #E42518;
+}
+
+.content .search-filter .icon.active ~ #search_bar {
+  padding-left: 1rem;
+  padding-right: 3rem;
+}
+
 .content .search-filter .form-control {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
@@ -12487,6 +12498,33 @@ fieldset:disabled .btn {
   border-top-right-radius: .5rem;
   border-bottom-right-radius: .5rem;
   margin-left: -1px;
+}
+
+.content .filter-menu {
+  -webkit-box-shadow: 0 0 32px rgba(26, 26, 29, 0.16);
+          box-shadow: 0 0 32px rgba(26, 26, 29, 0.16);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+  background-color: white;
+  z-index: 3;
+  height: 0;
+  visibility: hidden;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: height .2s ease;
+  transition: height .2s ease;
+}
+
+.content .filter-menu.active {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  visibility: visible;
+  margin-top: 1rem;
+  -webkit-transition: height .2s ease;
+  transition: height .2s ease;
+  padding: 2rem;
 }
 
 .content .table {
