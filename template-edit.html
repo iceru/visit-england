@@ -116,8 +116,8 @@
         <div class="content">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-8">
-                        <h3 class="mb-3">Basic Info</h3>
+                    <div class="col-12 col-lg-8 mb-0 mb-lg-3">
+                        <h4 class="mb-3">Basic Info</h4>
                         <div class="mb-4">
                             <div class="d-flex justify-content-between">
                                 <label for="txa_name" class="form-label">TXA Name</label>
@@ -214,7 +214,160 @@
                                 </div>
                             </div>
                         </div>
-                        <h3 class="mb-3">Features</h3>
+                        <h4 class="mb-3">Features</h4>
+                        <h4 class="mb-3">Amandments</h4>
+                        <table class="table table-responsive table-bordered mb-4">
+                            <thead>
+                                <tr class="table-dark">
+                                    <th>Updated</th>
+                                    <th>Revision</th>
+                                    <th>Status</th>
+                                    <th>OnRequest State</th>
+                                    <th>Booking Price</th>
+                                    <th>Payment Amount</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">15 Sep 2021 11.11</td>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="status completed">Completed</div>
+                                    </td>
+                                    <td>
+                                        <div class="status completed">Completed</div>
+                                    </td>
+                                    <td>$75.60</td>
+                                    <td>$100.00</td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="bi bi-eye-fill primary-color"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="mb-3">Payment History</h4>
+                        <table class="table table-responsive table-bordered mb-4">
+                            <thead>
+                                <tr class="table-dark">
+                                    <th>Revision</th>
+                                    <th>Amount</th>
+                                    <th>Refunded Portion</th>
+                                    <th>System</th>
+                                    <th>Type</th>
+                                    <th>Transaction Date</th>
+                                    <th>Transcript</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row">1</td>
+                                    <td>$900.00</td>
+                                    <td>$0.00</td>
+                                    <td>ECR</td>
+                                    <td>Payment</td>
+                                    <td>15 Sep 2021 11.11</td>
+                                    <td>91675421</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h4 class="mb-3">Accomodation Item</h4>
+                        <div class="accomodation-item">
+                            <div class="d-flex justify-content-between mb-4">
+                                <div>
+                                    <h3 class="mb-2">TestProvider Hotel</h3>
+                                    <div class="d-flex align-items-center">
+                                        <div class="me-4">
+                                            <i class="bi bi-person"></i>
+                                            2 Adults
+                                        </div>
+                                        <div class="me-4">
+                                            <i class="bi bi-calendar"></i>
+                                            28 Mar 2022 15:00 for 2 nights
+                                        </div>
+                                        <div class="me-4">
+                                            <i class="bi bi-ticket-detailed-fill"></i>
+                                            $900
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="button" class="btn btn-outline-primary">
+                                        <i class="bi bi-printer-fill"></i>
+                                        Print
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 col-lg-4">
+                                    <div class="img-wrapper">
+                                        <img src="/assets/images/image-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <div class="mb-3">
+                                        <small>Booking #</small>
+                                        <p>BOOK-USQBBPWW72</p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <small>Address</small>
+                                        <p>3/8 Alvan Street, Subiaco, 6008</p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <small>Check out</small>
+                                        <p>30 March 2022 11:00 AM</p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <small>Check in</small>
+                                        <p>28 March 2022 11:00 AM</p>
+                                    </div>
+                                    <div class="mb-3">
+                                        <small>Room Type</small>
+                                        <p>Accomodation Item</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <small>Adults</small>
+                                            <p>1</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <small>Children</small>
+                                            <p>0</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <small>Concession</small>
+                                            <p>0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="d-flex justify-content-between flex-column h-100">
+                                        <div>
+                                            <h4 class="mb-3">Payment Detail</h4>
+                                            <div class="total">
+                                                <div class="grey-color">Total Cost</div>
+                                                <div>$900.00</div>
+                                            </div>
+                                            <div class="total">
+                                                <div class="grey-color">Total Paid</div>
+                                                <div>$900.00</div>
+                                            </div>
+                                            <div class="dashed-border"></div>
+                                            <div class="total">
+                                                <div class="grey-color">Payment Due</div>
+                                                <div>$0.00</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn primary-color">Cancel</button>
+                                            <button type="button" class="btn btn-primary">Save</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-lg-4 right-sticky">
                         <div class="top-desc">

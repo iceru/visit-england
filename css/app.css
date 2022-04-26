@@ -1,11 +1,11 @@
 /* BREAKPOINTS */
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap");
 .grey-color {
-  color: #919192;
+  color: #919192 !important;
 }
 
 .primary-color {
-  color: #E42518;
+  color: #E42518 !important;
 }
 
 /*!
@@ -12004,6 +12004,19 @@ fieldset:disabled .btn {
   top: 1rem;
 }
 
+.total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
 .item-type {
   position: absolute;
   left: 0;
@@ -12317,19 +12330,6 @@ fieldset:disabled .btn {
   border-radius: 1rem;
   margin-bottom: 1.5rem;
   padding: 1.5rem;
-}
-
-.your-basket .summary .total {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 1rem;
 }
 
 .offcanvas {

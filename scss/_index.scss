@@ -82,13 +82,6 @@
     .summary {
         @include boxContent;
         padding: 1.5rem;
-
-        .total {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1rem;
-        }
     }
 }
 

@@ -40,9 +40,9 @@ $secondary: rgba($color: #919192, $alpha: 0.16);
 }
 
 .grey-color {
-  color: $grey;
+  color: $grey !important;
 }
 
 .primary-color {
-  color: $primary;
+  color: $primary !important;
 }
