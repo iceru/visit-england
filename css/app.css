@@ -12707,6 +12707,7 @@ small, .small {
   color: #E42518;
   padding: 6px .5rem;
   margin-right: .5rem;
+  font-weight: 300;
 }
 
 .content .badge-item i {
@@ -12727,6 +12728,50 @@ small, .small {
   padding: 1rem;
   border-radius: 1rem;
   margin-bottom: 1.5rem;
+}
+
+.content .images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .images .image {
+  position: relative;
+  margin-right: 1rem;
+}
+
+.content .images .image img {
+  border-radius: 4px;
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content .images .image .btn {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 24px;
+  height: 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  padding: 2px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.content .images .image .btn i {
+  height: 12px;
 }
 
 html, body {
