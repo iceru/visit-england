@@ -178,3 +178,26 @@
         margin-bottom: .5rem;
     }
 }
+
+.booking-success {
+    .content {
+        padding: 40px 0;
+    }
+}
+
+.view-booking {
+    .content {
+        .container {
+            > .row {
+                @include boxContent;
+                padding: 1.5rem;
+                margin: auto;
+                margin-top: -3rem;
+                position: relative;
+                z-index: 2;
+                background-color: white;
+                width: 90%;
+            }
+        }
+    }
+}
