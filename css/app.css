@@ -4,6 +4,10 @@
   color: #919192 !important;
 }
 
+.dark-grey-color {
+  color: #1A1A1D !important;
+}
+
 .primary-color {
   color: #E42518 !important;
 }
@@ -12667,6 +12671,14 @@ small, .small {
   vertical-align: middle;
   border-left: none;
   border-right: none;
+}
+
+.content .table .icons {
+  text-align: center;
+}
+
+.content .table .icons a:not(:last-child) {
+  margin-right: 1.25rem;
 }
 
 .content .table .status {

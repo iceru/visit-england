@@ -83,6 +83,13 @@
             border-right: none;
         }
 
+        .icons {
+            text-align: center;
+            a:not(:last-child) {
+                margin-right: 1.25rem;
+            }
+        }
+
         .status {
             padding: .5rem 1rem;
             border-radius: 8px;
