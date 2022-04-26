@@ -293,14 +293,14 @@
                                 $('#search_bar').focus(function (e) {
                                     e.preventDefault();
                                     $('.search-filter .icon').addClass('active');
-                                    $('.icon').append('<i class="bi bi-x-lg"></i>');
+                                    $('.search-filter .icon').append('<i class="bi bi-x-lg"></i>');
                                     $('.bi-search').remove();
                                 });
 
                                 $('#search_bar').focusout(function (e) {
                                     e.preventDefault();
                                     $('.search-filter .icon').removeClass('active');
-                                    $('.icon').append('<i class="bi bi-search"></i>');
+                                    $('.search-filter .icon').append('<i class="bi bi-search"></i>');
                                     $('.bi-x-lg').remove();
                                 });
                             </script>
@@ -344,7 +344,7 @@
                             </td>
                             <td>
                                 <a href="#">
-                                    <i class="bi bi-pencil-fill primary-color"></i>
+                                    <i class="bi bi-pencil-fill primary-color me-2"></i>
                                 </a>
                                 <a href="#">
                                     <i class="bi bi-trash-fill"></i>
@@ -363,7 +363,7 @@
                             </td>
                             <td>
                                 <a href="#">
-                                    <i class="bi bi-pencil-fill primary-color"></i>
+                                    <i class="bi bi-pencil-fill primary-color me-2"></i>
                                 </a>
                                 <a href="#">
                                     <i class="bi bi-trash-fill"></i>

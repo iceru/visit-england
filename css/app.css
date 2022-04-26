@@ -12516,7 +12516,7 @@ small, .small {
   margin-bottom: 1.5rem;
   padding: 1.5rem;
   margin: auto;
-  margin-top: -3rem;
+  margin-top: 2rem;
   position: relative;
   z-index: 2;
   background-color: white;
@@ -12647,6 +12647,33 @@ small, .small {
 .content .table .status.failed {
   color: #C10C00;
   background-color: #EBB0AD;
+}
+
+.content .badge-item {
+  background-color: #EBB0AD;
+  color: #E42518;
+  padding: 6px .5rem;
+  margin-right: .5rem;
+}
+
+.content .badge-item i {
+  color: black;
+  margin-left: .5rem;
+}
+
+.content .badges-container {
+  padding: 1rem;
+  background-color: #FAFAFA;
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+}
+
+.content .accomodation-item {
+  -webkit-box-shadow: 0 0 32px rgba(26, 26, 29, 0.16);
+          box-shadow: 0 0 32px rgba(26, 26, 29, 0.16);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 html, body {

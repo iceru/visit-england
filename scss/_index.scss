@@ -21,7 +21,7 @@
             align-items: center;
 
             &.active {
-                background: #EBB0AD;
+                background: $light-red;
                 color: $primary;
                 font-weight: bolder;
             }
@@ -192,7 +192,7 @@
                 @include boxContent;
                 padding: 1.5rem;
                 margin: auto;
-                margin-top: -3rem;
+                margin-top: 2rem;
                 position: relative;
                 z-index: 2;
                 background-color: white;

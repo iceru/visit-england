@@ -100,10 +100,31 @@
 
             &.failed {
                 color: #C10C00;
-                background-color: #EBB0AD;
+                background-color: $light-red;
             }
         }
     }
 
-    
+    .badge-item {
+        background-color: $light-red;
+        color: $primary;
+        padding: 6px .5rem;
+        margin-right: .5rem;
+
+        i {
+            color: black;
+            margin-left: .5rem;
+        }
+    }
+
+    .badges-container {
+        padding: 1rem;
+        background-color: #FAFAFA;
+        border-radius: .5rem;
+        margin-bottom: 2rem;
+    }
+
+    .accomodation-item {
+        @include boxContent;
+    }
 }
