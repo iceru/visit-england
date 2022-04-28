@@ -200,12 +200,21 @@ small {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0;
   margin: 0;
 }
 
 .header .navigation ul li {
-  margin: 0 .5rem;
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+  .header .navigation ul li {
+    margin-bottom: .5rem;
+  }
 }
 
 .header .navigation ul li:first-child {
@@ -307,16 +316,22 @@ small {
   background-color: white;
   border-radius: 1rem;
   padding: 3rem 2rem;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 40%;
+  width: 400px;
+  left: 4rem;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 576px) {
   .login .content {
-    width: 400px;
-    position: absolute;
-    top: 40%;
-    left: 4rem;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    padding: 2rem 1.5rem;
   }
 }
 
@@ -749,6 +764,7 @@ small {
   padding: 6px .5rem;
   margin-right: .5rem;
   font-weight: 300;
+  margin-bottom: .5rem;
 }
 
 .content .badge-item i {
