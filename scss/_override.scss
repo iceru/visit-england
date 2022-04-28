@@ -1,0 +1,70 @@
+.btn {
+    &.btn-primary {
+        background-color: $primary;
+        border-color: $primary;
+
+        &:active {
+            color: #fff;
+            background-color: #b61e13;
+            border-color: #ab1c12;
+        }
+
+        &:hover {
+            color: #fff;
+            background-color: #c21f14;
+            border-color: #b61e13;
+        }
+
+        &:focus {
+            box-shadow: 0 0 0 0.25rem rgba(232, 70, 59, 50%);
+        }
+    }
+
+    &.btn-secondary {
+        background-color: $secondary;
+        border-color: $secondary;
+        color: #000;
+
+        &:active {
+            color: #000;
+            background-color: rgba(227, 227, 227, 0.328);
+            border-color: rgba(207, 207, 207, 0.244);
+        }
+
+        &:hover {
+            color: #000;
+            background-color: rgba(219, 219, 219, 0.286);
+            border-color: rgba(207, 207, 207, 0.244);
+        }
+
+        &:focus {
+            color: #000;
+            background-color: rgba(219, 219, 219, 0.286);
+            border-color: rgba(207, 207, 207, 0.244);
+            -webkit-box-shadow: 0 0 0 0.25rem rgba(48, 48, 48, 50%);
+            box-shadow: 0 0 0 0.25rem rgba(48, 48, 48, 50%);
+        }
+    }
+
+    &.btn-outline-primary {
+        color: $primary;
+        border-color: $primary;
+
+        &:active {
+            color: #fff;
+            background-color: $primary;
+            border-color: $primary;
+        }
+
+        &:hover {
+            color: #fff;
+            background-color: $primary;
+            border-color: $primary;
+        }
+
+        &:focus {
+            -webkit-box-shadow: 0 0 0 0.25rem rgba(228, 37, 24, 50%);
+            box-shadow: 0 0 0 0.25rem rgba(228, 37, 24, 50%);
+        }
+    }
+}
