@@ -175,4 +175,27 @@
             }
         }
     }
+
+    .admin-items {
+        @include breakpoint(laptop) {
+            width: 80%;
+            margin: auto;
+        }
+
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 1.5rem;
+            border: 1px solid #DADADA;
+            border-radius: 1rem;
+            margin-bottom: 1rem;
+            transition: all .2s ease;
+
+            &:hover {
+                box-shadow: 0 0 32px rgba($color: #1A1A1D, $alpha: 0.16);
+                border-color: white;
+                transition: all .2s ease;
+            }
+        }
+    }
 }

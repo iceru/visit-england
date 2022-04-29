@@ -835,6 +835,36 @@ small {
   height: 12px;
 }
 
+@media (min-width: 992px) {
+  .content .admin-items {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.content .admin-items .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border: 1px solid #DADADA;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.content .admin-items .item:hover {
+  -webkit-box-shadow: 0 0 32px rgba(26, 26, 29, 0.16);
+          box-shadow: 0 0 32px rgba(26, 26, 29, 0.16);
+  border-color: white;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
 .btn.btn-primary {
   background-color: #E42518;
   border-color: #E42518;
