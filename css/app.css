@@ -669,7 +669,11 @@ small {
   padding-left: 3rem;
 }
 
-.content .search-filter .btn {
+.content .search-filter #search {
+  border-radius: 0;
+}
+
+.content .search-filter #filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

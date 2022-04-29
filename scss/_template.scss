@@ -34,8 +34,12 @@
             border-bottom-right-radius: 0;
             padding-left: 3rem;
         }
+
+        #search {
+            border-radius: 0;
+        }
         
-        .btn {
+        #filter {
             display: flex;
             align-items: center;
             border: 1px solid $light-grey;
