@@ -231,3 +231,20 @@
         padding: 40px 0;
     }
 }
+
+.forgot-password {
+    .text {
+        font-size: 1.15rem;
+        text-align: center;
+        @include boxContent;
+
+        @include breakpoint(laptop) {
+            width: 80%;
+            margin: auto;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+}

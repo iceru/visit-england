@@ -624,6 +624,27 @@ small {
   padding: 40px 0;
 }
 
+.forgot-password .text {
+  font-size: 1.15rem;
+  text-align: center;
+  -webkit-box-shadow: 0 0 32px rgba(26, 26, 29, 0.16);
+          box-shadow: 0 0 32px rgba(26, 26, 29, 0.16);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 992px) {
+  .forgot-password .text {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.forgot-password .text a {
+  text-decoration: underline;
+}
+
 .content .top-desc {
   -webkit-box-shadow: 0 0 32px rgba(26, 26, 29, 0.16);
           box-shadow: 0 0 32px rgba(26, 26, 29, 0.16);
