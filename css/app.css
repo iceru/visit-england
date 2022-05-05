@@ -184,7 +184,7 @@ small {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: rgba(255, 255, 255, 0.9);
-  z-index: 999;
+  z-index: 1060;
   position: fixed;
   display: none;
 }
