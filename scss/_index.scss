@@ -168,8 +168,15 @@
     }
 
     .booking-widget {
+        display: flex;
+        align-items: center;
+
+        .arrow {
+            padding: 0 .5rem;
+        }
         .calendars {
             display: flex;
+            width: 100%;
 
             .calendar-item {
                 border-radius: 1rem;
