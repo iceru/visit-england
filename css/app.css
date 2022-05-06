@@ -433,7 +433,7 @@ small {
 
 .take-booking .item-wrapper .item-card .item-img img {
   width: 100%;
-  height: 100%;
+  height: 220px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: .5rem;
@@ -545,6 +545,7 @@ small {
 
 .offcanvas .oc-header .oc-image {
   margin-bottom: 1rem;
+  min-height: 50px;
 }
 
 .offcanvas .oc-header .oc-image img {
