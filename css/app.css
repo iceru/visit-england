@@ -995,6 +995,65 @@ small {
   box-shadow: 0 0 0 0.25rem #e42518;
 }
 
+.offcanvas .oc-header .oc-image {
+  min-height: 50px;
+}
+
+.item-wrapper .item-card .item-img img {
+  height: 220px;
+}
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1060;
+  position: fixed;
+  display: none;
+}
+
+.loading.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.booking-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking-widget .arrow {
+  padding: 0 .5rem;
+}
+
+.booking-widget .calendars {
+  width: 100%;
+}
+
+.ui-datepicker-prev span {
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>') !important;
+  background-position: 0px 0px !important;
+}
+
+.ui-datepicker-next span {
+  background-image: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>') !important;
+  background-position: 0px 0px !important;
+}
+
 html, body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
