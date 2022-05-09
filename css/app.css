@@ -1054,6 +1054,10 @@ small {
   background-position: 0px 0px !important;
 }
 
+.header .page-title h1 {
+  text-shadow: 1px 1px 3px #232323;
+}
+
 html, body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
