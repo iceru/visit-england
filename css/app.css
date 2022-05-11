@@ -1066,15 +1066,15 @@ small {
 }
 
 .ui-datepicker td {
-  width: 37px;
-  height: 37px;
+  width: 35px;
+  height: 35px;
 }
 
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
   background-color: transparent;
   border: none;
-  height: 37px;
-  width: 37px;
+  height: 35px;
+  width: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
