@@ -45,6 +45,34 @@
         background-position: 0px 0px !important;
 }
 
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    text-align: center;
+}
+
+.ui-widget-header {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $primary;
+    border-radius: 0;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    background-color: $primary;
+    color: white;
+    border: 1px solid rgba($color: $primary, $alpha: 0.7);
+}
+
+.ui-state-default:hover {
+    background-color: rgba($color: $primary, $alpha: 0.2);
+    color: black;
+}
+
 .header .page-title h1 {
     text-shadow: 1px 1px 3px #232323;
 }
