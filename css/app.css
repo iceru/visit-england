@@ -1093,6 +1093,21 @@ small {
   border: 1px solid rgba(228, 37, 24, 0.7);
 }
 
+.ui-datepicker-buttonpane .ui-datepicker-current {
+  border-radius: 4px;
+  color: #E42518;
+}
+
+.ui-datepicker-buttonpane .ui-datepicker-current:hover {
+  color: #E42518;
+}
+
+.ui-datepicker-buttonpane .ui-datepicker-close {
+  border-radius: 4px;
+  background-color: #E42518;
+  color: white;
+}
+
 .ui-state-default:hover {
   background-color: rgba(228, 37, 24, 0.2);
   color: black;

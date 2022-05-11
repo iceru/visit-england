@@ -78,6 +78,21 @@
     border: 1px solid rgba($color: $primary, $alpha: 0.7);
 }
 
+.ui-datepicker-buttonpane .ui-datepicker-current {
+    border-radius: 4px;
+    color: $primary;
+
+    &:hover {
+        color: $primary;
+    }
+}
+
+.ui-datepicker-buttonpane .ui-datepicker-close {
+    border-radius: 4px;
+    background-color: $primary;
+    color: white;
+}
+
 .ui-state-default:hover {
     background-color: rgba($color: $primary, $alpha: 0.2);
     color: black;

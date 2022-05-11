@@ -691,7 +691,10 @@
 
         <script>
             $(function () {
-                $('#datepicker').datepicker()
+                $('#datepicker').datepicker({
+                    numberOfMonths: 2,
+                    showButtonPanel: true
+                })
 
                 $('.date').on('click', function () {
                     $('#datepicker').datepicker('show')
