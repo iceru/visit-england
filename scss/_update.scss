@@ -101,3 +101,20 @@
 .header .page-title h1 {
     text-shadow: 1px 1px 3px #232323;
 }
+
+.instant, .on-request {
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+
+    .bi{
+        padding: .5rem;
+        background-color: $instant;
+        color: white;
+        font-size: 14px;
+    }
+}
+
+.on-request .bi {
+    background-color: $on-request;
+}
