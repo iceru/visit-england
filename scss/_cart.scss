@@ -1,12 +1,16 @@
-.instant {
+.instant, .on-request {
     margin-bottom: .5rem;
     display: flex;
     align-items: center;
 
-    .bi-lightning-fill {
+    .bi{
         padding: .5rem;
         background-color: $instant;
         color: white;
         font-size: 14px;
     }
+}
+
+.on-request .bi {
+    background-color: $on-request;
 }
