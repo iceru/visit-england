@@ -1,0 +1,12 @@
+.instant {
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+
+    .bi-lightning-fill {
+        padding: .5rem;
+        background-color: $instant;
+        color: white;
+        font-size: 14px;
+    }
+}

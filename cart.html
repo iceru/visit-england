@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit England</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+        integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="your-basket">
+        <div class="header">
+            <div class="navigation">
+                <div class="container">
+                    <div class="d-flex justify-content-between align-items-center flex-wrap top-nav">
+                        <a href="index.html">
+                            <div class="logo mb-3 mb-lg-0">
+                                <img src="assets/images/logo.png" alt="Visit England" />
+                                <h4>Trade Portal</h4>
+                            </div>
+                        </a>
+                        <div class="list-menu">
+                            <ul>
+                                <li class="icon light-blue">
+                                    <a href="tour-operators.html">
+                                        <i class="bi bi-card-list"></i>
+                                    </a>
+                                </li>
+                                <li class="icon light-blue">
+                                    <a href="settings.html">
+                                        <i class="bi bi-sliders2"></i>
+                                    </a>
+                                </li>
+                                <li class="separator"></li>
+                                <li class="icon blue">
+                                    <a href="settings.html">
+                                        <i class="bi bi-person-lines-fill"></i>
+                                    </a>
+                                </li>
+                                <li class="separator"></li>
+                                <li class="icon yellow">
+                                    <a href="settings.html">
+                                        <i class="bi bi-card-checklist"></i>
+                                    </a>
+                                </li>
+                                <li class="icon yellow">
+                                    <a href="settings.html">
+                                        <i class="bi bi-stop-circle"></i>
+                                    </a>
+                                </li>
+                                <li class="icon">
+                                    <a href="login.html">
+                                        <i class="bi bi-box-arrow-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center flex-wrap bottom-nav">
+                        <div class="menu-main mb-3 mb-lg-0">
+                            <ul>
+                                <li class="active">
+                                    <a href="index.html">Take a Booking</a>
+                                </li>
+                                <li>
+                                    <a href="template-table.html">Bookings</a>
+                                </li>
+                                <li>
+                                    <a href="suppliers.html">Suppliers</a>
+                                </li>
+                                <li>
+                                    <a href="services.html">Services</a>
+                                </li>
+                                <li>
+                                    <a href="baskets.html">Baskets</a>
+                                </li>
+                                <li>
+                                    <a href="reports.html">Reports</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user">
+                            <a href="index.html">Hi John Doe <span>- Tour Operator</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="page-title">
+                        <div class="background">
+                            <img src="/assets/images/background-header.png" alt="Background">
+                        </div>
+                        <h1>Take A Booking</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="container-xl">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row justify-content-end">
+                            <div class="col-auto">
+                                <a class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#confirmationModal" data-bs-title="Delete Basket"
+                                    data-bs-message="Are you sure you want to delete the entire basket?"
+                                    data-bs-path="/BookBasket/Delete"><i class="bi bi-trash"></i>Delete Basket</a>
+                            </div>
+                        </div>
+                        <div class="top-desc mt-3">
+                            <div class="top-items">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <small>Basket Id</small>
+                                        <p>BASK-ZSTMMHUR47</p>
+                                    </div>
+                                    <div class="col-3">
+                                        <small>Booking Id</small>
+                                        <p>
+                                            NA </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <label class="form-label" for="Label">Label</label>
+                                <input class="form-control text-box single-line" id="label" name="Label" placeholder=""
+                                    type="text" value="">
+                                <span class="text-muted small">Specify a label to apply to the booking so that you can
+                                    retrieve the basket later.</span>
+                                <div><span id="labelResult"></span></div>
+                            </div>
+                        </div>
+                        <div class="basket-container" data-booking-id="">
+
+
+
+
+                            <div class="basket-section mt-3">
+                                <h3 class="instant">
+                                    <i class="bi bi-lightning-fill me-2"></i>
+                                    Instant Confirmation
+                                </h3>
+                                <div class="basket-items">
+
+
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-10">
+                                                <p class="mb-2">Vine Charlecote Limited - Classic Double</p>
+
+
+
+                                                <div class="d-flex mb-3 grey-color">
+                                                    <i class="bi bi-people-fill me-2"></i>1 Adults <i
+                                                        class="bi bi-calendar-range ms-3 me-2"></i>26 May 2022 for 1
+                                                    nights
+                                                </div>
+
+
+
+                                                <div class="d-flex">
+                                                    <a href="/BookBasket/EditBasket?basketItemId=30bb3ec2-dbcf-4f16-87f6-03fef912fcea"
+                                                        class="btn btn-outline-primary btn-sm fw-bold me-3">Edit</a>
+
+                                                    <a class="btn btn-outline-primary btn-sm fw-bold"
+                                                        data-bs-toggle="modal" data-bs-target="#confirmationModal"
+                                                        data-bs-title="Delete Item"
+                                                        data-bs-message="Are you sure you want to delete this item from the basket?"
+                                                        data-bs-path="/BookBasket/DeleteBasketItem?basketItemId=30bb3ec2-dbcf-4f16-87f6-03fef912fcea">Delete</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 text-end mt-3 mt-lg-0">
+                                                <div>£80.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-10 text-end">
+                                        Sub Total
+                                    </div>
+                                    <div class="col-2 fw-bold text-end">
+                                        £80.00
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <button id="proceed" type="button" class="btn btn-primary">Place Booking</button>
+                            <a href="/Search" class="btn btn-outline-secondary ms-1">Keep Shopping</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
